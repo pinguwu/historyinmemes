@@ -1,3 +1,13 @@
 p {
   font: 2em "Lato", sans-serif;
+  text-align: center;
+}
+
+#bg {
+  background-image: url('welcomebkg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(5px);
 }
