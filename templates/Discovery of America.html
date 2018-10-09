@@ -1,46 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{% extends "layout.html" %}
+{% set active_page = "home" %}
 
-  <link rel="stylesheet" href="style2.css">
-  <title>Discovery of America - History in Memes</title>
-
-</head>
-
-<body>
-    <div id="bg"></div>
-     <nav class="navbar navbar-default">
-       <div class="container-fluid">
-         <div class="navbar-header">
-           <a class="navbar-brand" href="Page2.html">History in Memes</a>
-         </div>
-         <ul class="nav navbar-nav">
-           <li><a href="Page2.html">Home</a></li>
-           <li class="active"><a href="#">Discovery of America</a></li>
-           <li><a href="ww1.html">WW1</a></li>
-           <li><a href="ww2.html">WW2</a></li>
-           <li><a href="coldwar.html">Cold War</a></li>
-         </ul>
-       </div>
-     </nav>
-     <h1>Discovery of America</h1>
-     <img src="apple.jpg" alt="maps" width="480" height="379.5">
-     <img src="ci.jpeg" alt="???">
-     <img src="claim.png" alt="i claim">
-     <img src="free.jpeg" alt="freedom" width="492.25" height="393.75">
-     <img src="joke.jpg" alt="very funny">
-     <img src="kermit.jpg" alt="kermit the frog" width="365.5" height="362.5">
-     <img src="smile.jpg" alt="smile">
-     <img src="tmi.jpg" alt="tmi">
-     <img src="viking.jpg" alt="vikings">
-     <img src="Columbus.jpg" alt="CBS">
-     <img src="CCDOA.jpg" alt="Chris">
-     <img src="DOA.jpg" alt="Viking">
+  {% block title %} Discovery Of America {% endblock %}
+  
+  {% block content %}
+  <h1>Discovery of America</h1>
+  
+     <img src="{{url_for('static', filename=('apple.jpg')}}" alt="maps" width="480" height="379.5">
+     <img src="{{url_for('static', filename=('ci.jpg')}}" alt="???">
+     <img src="{{url_for('static', filename=('claim.jpg')}}" alt="i claim">
+     <img src="{{url_for('static', filename=('free.jpeg')}}" alt="freedom" width="492.25" height="393.75">
+     <img src="{{url_for('static', filename=('joke.jpg')}}" alt="very funny">
+     <img src="{{url_for('static', filename=('kermit.jpg')}}" alt="kermit the frog" width="365.5" height="362.5">
+     <img src="{{url_for('static', filename=('smile.jpg')}}" alt="smile">
+     <img src="{{url_for('static', filename=('tmi.jpg')}}" alt="tmi">
+     <img src="{{url_for('static', filename=('viking.jpg')}}" alt="vikings">
+     <img src="{{url_for('static', filename=('Columbus.jpg')}}" alt="CBS">
+     <img src="{{url_for('static', filename=('CCDOA.jpg')}}" alt="Chris">
+     <img src="{{url_for('static', filename=('DOA.jpg')}}" alt="Viking">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-
-</html>
+  {% endblock %}
