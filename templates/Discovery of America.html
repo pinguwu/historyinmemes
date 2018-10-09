@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% set active_page = "home" %}
+
+  {% block title %} Discovery Of America {% endblock %}
+  
+  {% block content %}
+  <h1>Discovery of America</h1>
+  
+     <img src="{{url_for('static', filename=('apple.jpg')}}" alt="maps" width="480" height="379.5">
+     <img src="{{url_for('static', filename=('ci.jpg')}}" alt="???">
+     <img src="{{url_for('static', filename=('claim.jpg')}}" alt="i claim">
+     <img src="{{url_for('static', filename=('free.jpeg')}}" alt="freedom" width="492.25" height="393.75">
+     <img src="{{url_for('static', filename=('joke.jpg')}}" alt="very funny">
+     <img src="{{url_for('static', filename=('kermit.jpg')}}" alt="kermit the frog" width="365.5" height="362.5">
+     <img src="{{url_for('static', filename=('smile.jpg')}}" alt="smile">
+     <img src="{{url_for('static', filename=('tmi.jpg')}}" alt="tmi">
+     <img src="{{url_for('static', filename=('viking.jpg')}}" alt="vikings">
+     <img src="{{url_for('static', filename=('Columbus.jpg')}}" alt="CBS">
+     <img src="{{url_for('static', filename=('CCDOA.jpg')}}" alt="Chris">
+     <img src="{{url_for('static', filename=('DOA.jpg')}}" alt="Viking">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  {% endblock %}
