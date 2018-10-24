@@ -1,2 +1,2 @@
 # historyinmemes
-https://github.com/pinguwu/historyinmemes
+https://pinguwu.github.io/historyinmemes
